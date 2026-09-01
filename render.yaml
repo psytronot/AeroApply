@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: aeroapply
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: AUTO_SUBMIT
+        value: "false"
+      - key: NVIDIA_API_KEY
+        sync: false
+      - key: NVIDIA_MODEL
+        value: nvidia/llama-3.3-nemotron-super-49b-v1.5
+      - key: NVIDIA_BASE_URL
+        value: https://integrate.api.nvidia.com/v1
