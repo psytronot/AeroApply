@@ -7,17 +7,22 @@ on:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
       - name: Install dependencies
-        run: npm ci
+        run: npm install
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
       - name: Run application tests
         run: npm test
-      - name: Build
-        run: npm run build --if-present
+      - name: Run end-to-end QA
+        run: npm run qa
+      - name: Run browser smoke test
+        run: npm run test-browser

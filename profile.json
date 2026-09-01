@@ -1,0 +1,24 @@
+{
+  "candidate": {
+    "name": "Sai Akhil Malladi",
+    "headline": "Aerospace Engineer | Aerospace & Space Technology | CAD | ANSYS | AI/ML",
+    "location": "Bengaluru, Karnataka, India",
+    "contact": {
+      "email": "saiakhilmalladiworks@gmail.com",
+      "phone": "",
+      "linkedin": "https://www.linkedin.com/in/saiakhilmalladi",
+      "github": ""
+    },
+    "education": [
+      {"institution":"Hindustan University","degree":"Bachelor of Technology - BTech, Aerospace, Aeronautical and Astronautical Engineering","period":"July 2017 - November 2024"},
+      {"institution":"Indian Institute of Science (IISc)","degree":"Advanced Certification Programme in Space Technologies","period":"October 2024 - April 2025"},
+      {"institution":"Indian Institute of Technology, Delhi","degree":"Professional Certificate Program in Generative AI Machine Learning and Intelligent Automation","period":"October 2025 - August 2026"}
+    ],
+    "profile_skills": ["Fluid Dynamics","Business Management","Collaborative Problem Solving","CAD","ANSYS","AI/ML","Aerospace Engineering","Space Technology","Systems Engineering"],
+    "target_tracks": ["Aerospace Engineering","Aeronautical Engineering","Aircraft Design","Aircraft Structures","Aerospace Structures","Structural Design","Aerodynamics","CFD","Propulsion","Rocket Propulsion","Thermal / Fluid Systems","Flight Mechanics","Flight Dynamics","Aircraft Systems","Space Systems","Spacecraft Engineering","Satellite Engineering","UAV / Drone Engineering","eVTOL Engineering","Systems Engineering","AI/ML","Engineering Data / Automation"],
+    "target_role_patterns": ["Junior Aerospace Engineer","Graduate Aerospace Engineer","Graduate Engineer Trainee","GET","Aerospace Engineer","Aeronautical Engineer","Aircraft Design Engineer","Structural Design Engineer","Aerospace Structures Engineer","Aerodynamics Engineer","CFD Engineer","Propulsion Engineer","Rocket Propulsion Engineer","Flight Mechanics Engineer","Flight Dynamics Engineer","Aircraft Systems Engineer","Space Systems Engineer","Satellite Engineer","UAV Engineer","Drone Engineer","eVTOL Engineer","Systems Engineer","AI Engineer Intern","AI/ML Intern","ML Intern","AI/ML Apprentice","Engineering Automation Intern","Engineering Apprentice","Aerospace Intern","Aerospace Apprentice","Graduate Apprentice","Engineering Trainee"],
+    "target_locations": ["India","Bengaluru","Hyderabad","Chennai","Mumbai","Pune","Delhi NCR","Ahmedabad","Noida","Gurugram","Kochi","Thiruvananthapuram","Remote"],
+    "employment_types": ["Full-time","Internship","Apprenticeship","Trainee","Graduate Programme"],
+    "source": "LinkedIn profile export supplied by candidate"
+  }
+}
