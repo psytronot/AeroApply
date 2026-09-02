@@ -1,0 +1,35 @@
+name: AeroApply V1 CI
+
+on:
+  push:
+    branches: [main, floot-v1-port]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install server dependencies
+        run: npm install
+      - name: Install UI dependencies
+        run: npm --prefix web install
+      - name: Build Mission Control
+        run: npm --prefix web run build
+      - name: Start server
+        run: node server.js > /tmp/aeroapply.log 2>&1 &
+      - name: Health smoke test
+        run: |
+          for i in {1..20}; do curl -fsS http://127.0.0.1:8787/api/health && exit 0; sleep 1; done
+          cat /tmp/aeroapply.log
+          exit 1
+      - name: Existing unit/agent checks
+        run: npm test
