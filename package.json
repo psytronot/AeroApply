@@ -1,10 +1,12 @@
 {
   "name": "aeroapply-local",
-  "version": "0.4.0",
+  "version": "1.0.0-v1-port",
   "private": true,
   "type": "module",
   "scripts": {
     "start": "node server.js",
+    "build": "npm --prefix web install && npm --prefix web run build",
+    "dev:ui": "npm --prefix web run dev",
     "install-browser": "npx playwright install chromium",
     "test-browser": "node src/browser-smoke.js",
     "test": "node src/self-test.js && node src/agent-test.js",
